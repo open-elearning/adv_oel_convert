@@ -1,0 +1,115 @@
+
+.adv_oel_convert_cover {
+    position : fixed;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 100%;
+    background-color : #333;
+    opacity : 0.5;
+    z-index : 999;
+}
+
+.adv_oel_convert_body {
+    position : fixed;
+    left : 50%;
+    top : 50%;
+    width: 450px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    margin-left : -225px;
+    margin-top : -200px;
+    font-family : Arial, sans-serif;
+    font-size : 12px;
+    color : #333;
+    border: solid 1px #333;
+    background-color : #f5f5f5;
+    z-index: 1000;
+}
+
+.adv_oel_convert_header {
+    background-color : #f5f5f5;
+    border-bottom : 1px solid #ccc;
+    padding : 10px;
+    font-size : 16px;
+    font-weight : bold;
+    color : #333;
+}
+
+.adv_oel_convert_content {
+    position : absolute;
+    left : 10px;
+    top : 50px;
+    width : 430px;
+    height : 340px;
+    border: solid 1px #333;
+}
+
+.btn_line {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.btn_import {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+    clear: both;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: initial;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0 1rem;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    background: cornflowerblue;
+    border-color: #454cad;
+    cursor: pointer;
+}
+
+input[type=file] {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+    clear: both;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: initial;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 1rem;
+    padding-top: 40px;
+    width: 95%;
+    height: 160px;
+    line-height: 120px;
+    color: #5f6982;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    border: dashed 1px #454cad;
+    background-image: url(download.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#div_loader_oel {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    display : none;
+    background: url('linear-progressbar.gif') no-repeat center center;
+    z-index: 999;
+}
