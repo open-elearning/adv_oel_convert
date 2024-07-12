@@ -50,7 +50,7 @@ function adv_oel_convert_receive_message(event) {
         adv_oel_convert_close();
     } else if (event.data == 'loaded') {
         document.getElementById('div_loader_oel').style.display = 'block';
-        document.getElementById('interface_ifrm').style.display = 'none';
+        document.getElementById('interface_ifrm').style.opacity = '0.1';
     } else {
         adv_oel_convert_back(event.data);
     }
