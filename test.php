@@ -14,28 +14,28 @@ if (!api_is_anonymous()) {
     ?>
 
     <h4>Convert PDF to Image</h4>
-    <input style="width:320px;" type="text" id="filepath" name="filepath" />
-    <input onClick="adv_oel_convert_process_to_input('pdf','image','filepath');" type="button" id="convert" value="..."  style="margin-left:10px;" />
+    <input style="width:320px;" type="text" id="pdfToImage" name="pdfToImage" />
+    <input onClick="adv_oel_convert_process_to_input('pdf','image','pdfToImage');" type="button" id="convert" value="..."  style="margin-left:10px;" />
     </hr>
 
     <h4>Convert DOCX to HTML</h4>
-    <input style="width:320px;" type="text" id="filepath4" name="filepath" />
-    <input onClick="adv_oel_convert_process_to_input('pdf','image','filepath4');" type="button" id="convert4" value="..."  style="margin-left:10px;" />
+    <input style="width:320px;" type="text" id="docxToHtml" name="docxToHtml" />
+    <input onClick="adv_oel_convert_process_to_input('docx','html','docxToHtml');" type="button" id="convert4" value="..."  style="margin-left:10px;" />
     </hr>
 
     <h4>Convert ODT to HTML</h4>
-    <input style="width:320px;" type="text" id="filepath3" name="filepath3" />
-    <input onClick="adv_oel_convert_process_to_input('pptx','image','filepath3');" type="button" id="convert3" value="..."  style="margin-left:10px;" />
+    <input style="width:320px;" type="text" id="odtToHtml" name="odtToHtml" />
+    <input onClick="adv_oel_convert_process_to_input('odt','html','odtToHtml');" type="button" id="odtToHtmlButton" value="..."  style="margin-left:10px;" />
     </hr>
 
     <h4>Convert PPTX to Image</h4>
-    <input style="width:320px;" type="text" id="filepath2" name="filepath2" />
-    <input onClick="adv_oel_convert_process_to_input('pptx','image','filepath2');" type="button" id="convert2" value="..."  style="margin-left:10px;" />
+    <input style="width:320px;" type="text" id="pptxToImage" name="pptxToImage" />
+    <input onClick="adv_oel_convert_process_to_input('pptx','image','pptxToImage');" type="button" id="pptxToImageButton" value="..."  style="margin-left:10px;" />
     </hr>
 
     <h4>Convert PPTX to HTML</h4>
-    <input style="width:320px;" type="text" id="filepath3" name="filepath3" />
-    <input onClick="adv_oel_convert_process_to_input('pptx','image','filepath3');" type="button" id="convert3" value="..."  style="margin-left:10px;" />
+    <input style="width:320px;" type="text" id="pptxToHtml" name="pptxToHtml" />
+    <input onClick="adv_oel_convert_process_to_input('pptx','html','pptxToHtml');" type="button" id="convert3" value="..."  style="margin-left:10px;" />
     </hr>
 
 

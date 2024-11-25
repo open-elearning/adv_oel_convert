@@ -3,6 +3,7 @@
 /**
  * @package chamilo.plugin adv_oel_convert
  * @author Damien Renou / 
+ * @author CFPPA-AC https://cfppaariegecomminges.fr/
 */
 /* Plugin config */
 
@@ -18,8 +19,8 @@ if (file_exists($lib_url)) {
 
     $plugin_info['title'] = 'adv_oel_convert';
     $plugin_info['comment'] = "adv_oel_convert";
-    $plugin_info['version'] = '1.0';
-    $plugin_info['author'] = 'Damien RENOU';
+    $plugin_info['version'] = '1.1';
+    $plugin_info['author'] = 'Damien RENOU & CFPPA-AC';
 
     // The plugin configuration
     $form = new FormValidator('form');
@@ -35,6 +36,9 @@ if (file_exists($lib_url)) {
     $plugin_info['templates'] = array('inc/template.tpl');
 
 } else {
-    
-    
+    api_protect_admin_script(true);
+    $pluginName = 'adv_oel_convert-main';
+    if(str_contains($_SERVER['REQUEST_URI'], $pluginName)){
+        header("Location:../../plugin/".$pluginName ."/test.php");
+    }
 }

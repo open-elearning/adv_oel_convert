@@ -1,17 +1,23 @@
 
-var interface_oel_convert = 'pdf-image-converter-main';
+var interface_oel_convert = 'no-engine';
 var interface_oel_result_json = new Object();
 var interface_oel_type = '';
 var interface_oel_toType = '';
 var interface_oel_inputobj = document.createElement('input');
 
 function adv_oel_convert_process_to_input(type,toType,inputobj) {
+    // Reset converter
     interface_oel_convert = 'no-engine';
+
     interface_oel_type = type;
     interface_oel_toType = toType;
     if (type == 'pdf'&& toType == 'image') {
         interface_oel_inputobj = inputobj;
         interface_oel_convert = 'pdf-image-converter-main';
+    } else if (type === "odt" && toType === "html"){
+        interface_oel_convert = 'odt-html-converter-main';
+    } else if (type === "pptx" && toType === "html"){
+        interface_oel_convert = 'pptx-html-converter-main';
     }
     adv_oel_convert_win();
 }

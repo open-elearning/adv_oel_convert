@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="text/javascript" src="./lib/pdf.js" ></script>
-  <script type="text/javascript" src="../../resources/js/common.js" ></script>
-  <script type="text/javascript" src="index.js" ></script>
-  <script type="text/javascript" src="../../resources/js/jquery-3.7.1.min.js" ></script>
+  <script type="text/javascript" src="../../resources/js/jquery-3.7.1.min.js" defer></script>
+  <script type="text/javascript" src="./lib/jszip.v2.min.js" defer></script>
+  <script type="text/javascript" src="lib/odt.js" defer></script>
+  <script type="text/javascript" src="index.js" defer></script>
   <link rel="stylesheet" href="../../resources/css/adv_oel_convert.css" />
   <title>Document</title>
   <style>
@@ -33,12 +33,9 @@
 </head>
 <body>
   
-  <div id="errordiv" align="center" style="margin-left: auto; margin-right: auto;"> 
-    <span id="error" style="color: red; display: none"> </span> 
-  </div>
-  <input type="file" name="pdf_file" id="pdf_file" accept=".pdf" />
+  <input type="file" name="odt_file" id="odt_file" accept=".odt" />
   <p class="btn_line" style="display:none;" >
-  <input type="button" class="btn_import" onClick="processToExport();" value="Import" id="btn_import" />
+  <input type="button" class="btn_import" value="Import" id="btn_import" />
   </p>
   <canvas id="preview" ></canvas>
   <div id="root" ></div>
